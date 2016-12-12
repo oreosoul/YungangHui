@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/layout.css" />
+		<title>核对信息</title>
+		<style>
+			#shopcar_list {
+				margin-top: 10px;
+				width: 93%;
+				border-bottom: #CCCCCC 1px solid;
+			}
+			#indexSearch img{
+				width: 25px;
+				height: 25px;
+				float: left;
+				margin-left: 2%;
+				margin-top: 14px;
+			}
+			#indexSearch p{
+				margin-right: 10%;
+			}
+			#choosetype{
+				display: none;
+			}
+			#accountbar{
+				margin-bottom: 0px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<div id="indexSearch">
+				<a href="shopcar_full.html"><img src="img/icons/back.png"/></a>
+				<p>核对订单</p>
+			</div>
+		</header>
+		<div id="container">
+			<div id="receipt">
+				<div id="localicon"><img src="img/icons/local.png"/></div>
+				<P>收货人：王先生</P>
+				<P>收货地址：广东省珠海市香洲区唐家湾镇北京师范大学</P>
+				<a href="#"><img src="img/icons/next.png" /></a>
+			</div>
+			<div id="shopcar_list">
+				<dl>
+					<dt>
+					<img src="img/list-pc1.jpg"/>
+				    </dt>
+					<dd class="show_message">
+						<p><a href="#">TELFAR Pkt Logo Basic Tee LOGO印花纯色T恤</a></p>
+						<p>颜色：白色 尺码：M</p>
+						<span class="price">￥999</span>
+						<p class="num">x1</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+					<img src="img/list-pc1.jpg"/>
+				    </dt>
+					<dd class="show_message">
+						<p><a href="#">TELFAR Pkt Logo Basic Tee LOGO印花纯色T恤</a></p>
+						<p>颜色：白色 尺码：M</p>
+						<span class="price">￥999</span>
+						<p class="num">x1</p>
+					</dd>
+				</dl>
+				
+			</div>
+			<div id="paytypebar">
+				<P>支付方式</P>
+				<a href="#"><img src="img/icons/next.png" /></a>
+			</div>
+			<div id="choosetype">
+				<div class="paytype">
+					<input type="radio" checked="checked" name="sex" />红币支付（不包邮费）
+				</div>
+				<div class="paytype">
+					<input type="radio" name="sex" />微信支付
+				</div>
+			</div>
+			<div id="passbar">
+				<input type="text" id="" value="" placeholder="备注"/>
+			</div>
+			<div id="allaccounts">
+				<div class="addaccounts"><p>商品金额</p><label>￥139.00</label></div>
+				<div class="addaccounts"><p>运费</p><label>￥10.00</label></div>
+			</div>
+		</div>
+		<div id="accountbar">
+			<p>您需要支付：<label id="total">￥149.00</label></p>
+			<a id="settleaccounts">确认</a>
+		</div>
+		<!--<footer id="surepay">
+			<p>您需要支付：</p><span>￥149.00</span>
+			<a>确认</a>
+		</footer>-->
+	</body>
+
+</html>

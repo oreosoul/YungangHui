@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/layout.css" />
+		<title>购物车</title>
+		<style type="text/css">
+			#guessYouLike {
+				margin-bottom: 50px;
+			}
+			
+			#container {
+				overflow: hidden;
+			}
+			.choosenunbar{
+				display: none;
+			}
+			#container{
+				margin-bottom: 100px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<div id="indexSearch">
+				<div id="searchBox">
+					<div id="searchInner">
+						<p>购物车</p>
+					</div>
+				</div>
+				<div id="homeBox">
+					<a id="editBtn" href="#" onclick="Show_Numbar()">编辑</a>
+				</div>
+			</div>
+		</header>
+		<div id="container">
+			<div id="shopcar_list">
+				<dl>
+					<dt class="checkbar">
+						<input type="checkbox" class="check" checked="checked"/>
+					</dt>
+					<dt>
+					<img src="img/list-pc1.jpg"/>
+				    </dt>
+					<dd class="show_message">
+						<p><a href="#">TELFAR Pkt Logo Basic Tee LOGO印花纯色T恤</a></p>
+						<p>颜色：白色 尺码：M</p>
+						<span class="cartprice">￥999</span>
+						<p class="num">x1</p>
+					</dd>
+					<dd class="choosenunbar">
+						<div class="changebar">
+							<a class="min" href="#">-</a>
+							<input class="text_box" type="text" value="1"/>
+							<a class="add" href="#">+</a>
+						</div>
+						<a class="delete">删除</a>
+						<span>￥999</span>
+						<p class="num">x1</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt class="checkbar">
+						<input type="checkbox" class="check" checked="checked"/>
+					</dt>
+					<dt>
+					<img src="img/list-pc1.jpg"/>
+				    </dt>
+					<dd class="show_message">
+						<p><a href="#">TELFAR Pkt Logo Basic Tee LOGO印花纯色T恤</a></p>
+						<p>颜色：白色 尺码：M</p>
+						<span class="cartprice">￥999</span>
+						<p class="num">x1</p>
+					</dd>
+					<dd class="choosenunbar">
+						<div class="changebar">
+							<a class="min" href="#">-</a>
+							<input class="text_box" type="text" value="1"/>
+							<a class="add" href="#">+</a>
+						</div>
+						<a class="delete">删除</a>
+						<span>￥999</span>
+						<p class="num">x1</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt class="checkbar">
+						<input type="checkbox" class="check" checked="checked"/>
+					</dt>
+					<dt>
+					<img src="img/list-pc1.jpg"/>
+				    </dt>
+					<dd class="show_message">
+						<p><a href="#">TELFAR Pkt Logo Basic Tee LOGO印花纯色T恤</a></p>
+						<p>颜色：白色 尺码：M</p>
+						<span class="cartprice">￥999</span>
+						<p class="num">x1</p>
+					</dd>
+					<dd class="choosenunbar">
+						<div class="changebar">
+							<a class="min" href="#">-</a>
+							<input class="text_box" type="text" value="1"/>
+							<a class="add" href="#">+</a>
+						</div>
+						<a class="delete">删除</a>
+						<span>￥999</span>
+						<p class="num">x1</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt class="checkbar">
+						<input type="checkbox" class="check" checked="checked"/>
+					</dt>
+					<dt>
+					<img src="img/list-pc1.jpg"/>
+				    </dt>
+					<dd class="show_message">
+						<p><a href="#">TELFAR Pkt Logo Basic Tee LOGO印花纯色T恤</a></p>
+						<p>颜色：白色 尺码：M</p>
+						<span class="cartprice">￥999</span>
+						<p class="num">x1</p>
+					</dd>
+					<dd class="choosenunbar">
+						<div class="changebar">
+							<a class="min" href="#">-</a>
+							<input class="text_box" type="text" value="1"/>
+							<a class="add" href="#">+</a>
+						</div>
+						<a class="delete">删除</a>
+						<span>￥999</span>
+						<p class="num">x1</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt class="checkbar">
+						<input type="checkbox" class="check" checked="checked"/>
+					</dt>
+					<dt>
+					<img src="img/list-pc1.jpg"/>
+				    </dt>
+					<dd class="show_message">
+						<p><a href="#">TELFAR Pkt Logo Basic Tee LOGO印花纯色T恤</a></p>
+						<p>颜色：白色 尺码：M</p>
+						<span class="cartprice">￥999</span>
+						<p class="num">x1</p>
+					</dd>
+					<dd class="choosenunbar">
+						<div class="changebar">
+							<a class="min" href="#">-</a>
+							<input class="text_box" type="text" value="1"/>
+							<a class="add" href="#">+</a>
+						</div>
+						<a class="delete">删除</a>
+						<span>￥999</span>
+						<p class="num">x1</p>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<div id="accountbar">
+			<input type="checkbox" id="allchecedbar" checked="checked"/>
+			<label id="allcheced">全选</label>
+			<p>总计：￥<label id="total">1234.00</label></p>
+			<a id="settleaccounts" href="checkmessage.html">结算</a>
+		</div>
+		<footer>
+			<div id="indexFooterBox">
+				<ul id="indexFooter">
+					<li>
+						<a href="index.html"><img src="img/icons/home.png" />
+							<br />首页</a>
+					</li>
+					<li>
+						<a href="huodong.html"><img src="img/icons/recharge.png" />
+							<br />特价活动</a>
+					</li>
+					<li>
+						<a href=""><img src="img/icons/cart_fill.png" />
+							<br />购物车</a>
+					</li>
+					<li>
+						<a href="my.html"><img src="img/icons/my.png" />
+							<br />我的</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</body>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+	<script>
+		$(function() {
+			$(".add").click(function() {
+				var t = $(this).parent().find('input[class*=text_box]');
+				t.val(parseInt(t.val()) + 1)
+			})
+			$(".min").click(function() {
+					var t = $(this).parent().find('input[class*=text_box]');
+					t.val(parseInt(t.val()) - 1)
+					if (parseInt(t.val()) < 0) {
+						t.val(0);
+					}
+				})
+		})
+		function Show_Numbar(){
+			var message=document.getElementsByClassName("show_message");
+			var numbar=document.getElementsByClassName("choosenunbar");
+			var len = message.length;
+			var btn = document.getElementById("editBtn");
+			var allselect = document.getElementById("allcheced");
+			for(var i=0;i<len;i++){
+				if(message[i].style.display=="none")
+				{
+					message[i].style.display="block";
+					numbar[i].style.display="none";
+					btn.innerHTML = "编辑";
+					allselect.innerHTML="全选";
+				}
+				else
+				{
+					
+					numbar[i].style.display="block";
+					message[i].style.display="none";
+					btn.innerHTML = "完成";
+					allselect.innerHTML="删除";
+				}
+			}
+		}
+	</script>
+
+</html>

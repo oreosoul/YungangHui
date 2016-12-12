@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/search.css" />
+		<title>搜索结果</title>	
+
+	</head>
+	<body>
+		<header>
+				<div id="searchBox">
+					<div id="searchInner">
+						<img src="img/icons/search_Black.png" />
+						<input type="text" id="" value="" placeholder="请输入商品名称"/>
+					</div>
+				</div>
+				<div id="return">
+					<a href="index.html">取消</a>
+				</div>
+		</header>
+		<div id="container">
+			<div class="filtrateBar">
+				<ul>
+					<li class="filtrateBtn"><a href="#">默认<img src="img/icons/unfold.png"/></a></li>
+					<li class="filtrateBtn"><a href="#">最新<img src="img/icons/unfold.png"/></a></li>
+					<li class="filtrateBtn" id="price"><a href="#">价格<img id="toggleImg" src="img/icons/fold_toggle.png"/></a></li>
+					<li class="filtrateBtn"><a href="#">热度<img src="img/icons/unfold.png"/></a></li>
+				</ul>
+			</div>
+			<div id="searchResBox">
+				<div id="guessYouLike">
+					<table border="0" >
+						<tr>
+							<td>
+								<img src="img/banner/01.jpg"/>
+								<p>商品名称</p>
+								<p><span class="nowPrice price">￥128.00</span><span class="prePrice">￥420.00</span></p>
+							</td>
+							<td>
+								<img src="img/banner/02.jpg"/>
+								<p>商品名称</p>
+								<p><span class="price">￥130.00</span></p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="img/banner/03.jpg"/>
+								<p>商品名称</p>
+								<p><span class="nowPrice price">￥128.00</span><span class="prePrice">￥420.00</span></p>
+							</td>
+							<td>
+								<img src="img/banner/01.jpg"/>
+								<p>商品名称</p>
+								<p><span class="price">￥130.00</span></p>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js" ></script>
+	<script type="text/javascript">
+		$(".filtrateBtn > a").click(function(){
+			if($(this).children("img").attr("id")=="toggleImg"){
+				$(this).addClass("here").parent().siblings().children("a").removeClass("here")
+					.children("img").attr("src","img/icons/unfold.png");
+				if($("#toggleImg").attr("src")=="img/icons/fold_toggle_up.png"){
+					$("#toggleImg").attr("src","img/icons/fold_toggle_down.png");
+				}else{
+					$("#toggleImg").attr("src","img/icons/fold_toggle_up.png");
+				}
+			}else{
+				$(this).addClass("here").children("img").attr("src","img/icons/unfold_b.png")
+					.parent().parent().siblings().children("a").removeClass("here")
+				.children("img").attr("src","img/icons/unfold.png");
+				$("#price > a").children("img").attr("src","img/icons/fold_toggle.png");
+			}
+		});
+	</script>
+</html>

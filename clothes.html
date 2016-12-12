@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/layout.css"/>
+		<title>服装</title>	
+
+	</head>
+
+	<body>
+		<header>
+				<div id="headerBox">
+					<div id="leftBox">
+						<a href="index.html"><img src="img/icons/back.png"/></a>
+					</div>
+					服装
+					<div id="rightBox">
+						<a href="#"><img src="img/icons/calendar.png"/></a>
+					</div>
+				</div>
+		</header>
+		<div id="container">
+			<div class="filtrateBar">
+				<ul>
+					<li class="filtrateBtn"><a href="#">默认<img src="img/icons/unfold.png"/></a></li>
+					<li class="filtrateBtn"><a href="#">最新<img src="img/icons/unfold.png"/></a></li>
+					<li class="filtrateBtn" id="price"><a href="#">价格<img id="toggleImg" src="img/icons/fold_toggle.png"/></a></li>
+					<li class="filtrateBtn"><a href="#">热度<img src="img/icons/unfold.png"/></a></li>
+				</ul>
+			</div>
+			<div id="searchResBox">
+				<div id="guessYouLike">
+					<table border="0" >
+						<tr>
+							<td>
+								<a href="details.html"><img src="img/banner/01.jpg"/>
+								<p>商品名称</p>
+								<p><span class="nowPrice price">￥128.00</span><span class="prePrice">￥420.00</span></p></a>
+								<p><span class="saleNum">月销量:66&nbsp;&nbsp;&nbsp;人气:88</span></p></a>
+							</td>
+							<td>
+								<a href="details.html"><img src="img/banner/02.jpg"/>
+								<p>商品名称</p>
+								<p><span class="price">￥130.00</span></p></a>
+								<p><span class="saleNum">月销量:66&nbsp;&nbsp;&nbsp;人气:88</span></p></a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="details.html"><img src="img/banner/03.jpg"/>
+								<p>商品名称</p>
+								<p><span class="nowPrice price">￥128.00</span><span class="prePrice">￥420.00</span></p></a>
+								<p><span class="saleNum">月销量:66&nbsp;&nbsp;&nbsp;人气:88</span></p></a>
+							</td>
+							<td>
+								<a href="details.html"><img src="img/banner/01.jpg"/>
+								<p>商品名称</p>
+								<p><span class="price">￥130.00</span></p></a>
+								<p><span class="saleNum">月销量:66&nbsp;&nbsp;&nbsp;人气:88</span></p></a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="details.html"><img src="img/banner/03.jpg"/>
+								<p>商品名称</p>
+								<p><span class="nowPrice price">￥128.00</span><span class="prePrice">￥420.00</span></p></a>
+								<p><span class="saleNum">月销量:66&nbsp;&nbsp;&nbsp;人气:88</span></p></a>
+							</td>
+							<td>
+								<a href="details.html"><img src="img/banner/01.jpg"/>
+								<p>商品名称</p>
+								<p><span class="price">￥130.00</span></p></a>
+								<p><span class="saleNum">月销量:66&nbsp;&nbsp;&nbsp;人气:88</span></p></a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="details.html"><img src="img/banner/03.jpg"/>
+								<p>商品名称</p>
+								<p><span class="nowPrice price">￥128.00</span><span class="prePrice">￥420.00</span></p></a>
+								<p><span class="saleNum">月销量:66&nbsp;&nbsp;&nbsp;人气:88</span></p></a>
+							</td>
+							<td>
+								<a href="details.html"><img src="img/banner/01.jpg"/>
+								<p>商品名称</p>
+								<p><span class="price">￥130.00</span></p></a>
+								<p><span class="saleNum">月销量:66&nbsp;&nbsp;&nbsp;人气:88</span></p></a>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js" ></script>
+	<script type="text/javascript">
+		$(".filtrateBtn > a").click(function(){
+			if($(this).children("img").attr("id")=="toggleImg"){
+				$(this).addClass("here").parent().siblings().children("a").removeClass("here")
+					.children("img").attr("src","img/icons/unfold.png");
+				if($("#toggleImg").attr("src")=="img/icons/fold_toggle_up.png"){
+					$("#toggleImg").attr("src","img/icons/fold_toggle_down.png");
+				}else{
+					$("#toggleImg").attr("src","img/icons/fold_toggle_up.png");
+				}
+			}else{
+				$(this).addClass("here").children("img").attr("src","img/icons/unfold_b.png")
+					.parent().parent().siblings().children("a").removeClass("here")
+				.children("img").attr("src","img/icons/unfold.png");
+				$("#price > a").children("img").attr("src","img/icons/fold_toggle.png");
+			}
+		});
+	</script>
+</html>

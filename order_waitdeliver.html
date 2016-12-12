@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/layout.css" />
+		<title>待发货</title>
+		<style>
+			#indexSearch img {
+				width: 25px;
+				height: 25px;
+				float: left;
+				margin-left: 2%;
+				margin-top: 14px;
+			}
+			
+			#indexSearch p {
+				margin-right: 10%;
+			}
+			
+			#shopcar_list {
+				margin-top: 0px;
+				border-bottom: 1px #CCCCCC solid;
+				border-top: 1px #CCCCCC solid;
+			}
+			
+			#headbar ul li:nth-child(3) a {
+				color: #333333;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<div id="indexSearch">
+				<a href="my.html"><img src="img/icons/back.png" /></a>
+				<p>我的订单</p>
+			</div>
+		</header>
+		<div id="container">
+			<div id="headbar">
+				<ul>
+					<li><a href="order_all.html">全部</a></li>
+					<li><a href="order_waitpay.html">待付款</a></li>
+					<li><a href="order_waitdeliver.html">待发货</a></li>
+					<li><a href="order_waitreceive.html">待收货</a></li>
+				</ul>
+			</div>
+			<div class="orderlist">
+				<div class="ordernum">
+					<p>订单编号：1605306295</p>
+					<p class="state">待发货</p>
+				</div>
+				<div id="shopcar_list">
+					<dl>
+						<dt>
+					<img src="img/list-pc2.jpg"/>
+				    </dt>
+						<dd class="show_message">
+							<p><a href="#">TELFAR Pkt Logo Basic Tee LOGO印花纯色T恤</a></p>
+							<p>颜色：白色 尺码：M</p>
+							<span class="price">￥999</span>
+							<p class="num">x1</p>
+						</dd>
+					</dl>
+				</div>
+				<div class="checkcost">
+					<p>共1件商品&nbsp;&nbsp;&nbsp;实付</p><label>￥1158.00</label>
+				</div>
+				<div class="order_btn">
+					<!--<a href="#">提醒发货</a>-->
+					<a href="#">删除订单</a>
+					<a href="#">提醒发货</a>
+					<a href="#">联系客服</a>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
